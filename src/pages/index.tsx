@@ -10,7 +10,13 @@ const pageStyles = {
 const headingStyles = {
   marginTop: 0,
   marginBottom: 64,
-  maxWidth: 1024,
+  maxWidth: 800,
+}
+const footerStyles = {
+  maxWidth: 800,
+  position: "absolute",
+  top: "90%",
+  height: "100%",
 }
 const headingAccentStyles = {
   color: "#663399",
@@ -133,7 +139,7 @@ const IndexPage: React.FC<PageProps> = () => {
       <h1 style={headingStyles}>
         <StaticImage src="../images/icon.png" alt="Easy Wallet logo image" width="128" height="128" align="middle"/> Easy&nbsp;Wallet by&nbsp;Tranoo.com
       </h1>
-      <p>
+      <p align="center" style={footerStyles}>
       Powered by{' '} <a href="https://www.gatsbyjs.org/" target="_blank" rel="noreferrer noopener">Gatsby</a>.
       </p>
     </main>
