@@ -1,5 +1,7 @@
 [![Netlify Status](https://api.netlify.com/api/v1/badges/bebc045b-76f8-469f-b9d6-a812961ec4aa/deploy-status)](https://app.netlify.com/sites/easy-wallet-tranoo-com/deploys)
 
+[Netlify Dashboard](https://app.netlify.com/sites/easy-wallet-tranoo-com/overview)
+
 <p align="center">
   <a href="https://www.gatsbyjs.com/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts">
     <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
