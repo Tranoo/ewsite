@@ -1,5 +1,6 @@
 import * as React from "react"
 import type { HeadFC, PageProps } from "gatsby"
+import { StaticImage } from "gatsby-plugin-image"
 
 const pageStyles = {
   color: "#232129",
@@ -9,7 +10,7 @@ const pageStyles = {
 const headingStyles = {
   marginTop: 0,
   marginBottom: 64,
-  maxWidth: 320,
+  maxWidth: 1024,
 }
 const headingAccentStyles = {
   color: "#663399",
@@ -130,7 +131,7 @@ const IndexPage: React.FC<PageProps> = () => {
   return (
     <main style={pageStyles}>
       <h1 style={headingStyles}>
-        Easy Wallet by Tranoo.com
+        <StaticImage src="../images/icon.png" alt="Easy Wallet logo image" width="128" height="128" align="middle"/> Easy&nbsp;Wallet by&nbsp;Tranoo.com
       </h1>
       <p>
       Powered by{' '} <a href="https://www.gatsbyjs.org/" target="_blank" rel="noreferrer noopener">Gatsby</a>.
