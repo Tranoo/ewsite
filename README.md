@@ -1,8 +1,8 @@
 [![Netlify Status](https://api.netlify.com/api/v1/badges/bebc045b-76f8-469f-b9d6-a812961ec4aa/deploy-status)](https://app.netlify.com/sites/easy-wallet-tranoo-com/deploys)
 
-[Netlify Dashboard](https://app.netlify.com/sites/easy-wallet-tranoo-com/overview)
-
-[Production website for https://easy-wallet.tranoo.com/](https://easy-wallet.tranoo.com/)
+## Links
+ * [Netlify Dashboard](https://app.netlify.com/sites/easy-wallet-tranoo-com/overview)
+ * [Production website for https://easy-wallet.tranoo.com/](https://easy-wallet.tranoo.com/)
 
 ## Docs
 
