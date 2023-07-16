@@ -3,7 +3,10 @@ import type { GatsbyConfig } from "gatsby";
 const config: GatsbyConfig = {
   siteMetadata: {
     title: `Easy Wallet by Tranoo.com`,
-    siteUrl: `https://easy-wallet.tranoo.com/`
+    siteUrl: `https://easy-wallet.tranoo.com/`,
+    description: `Easy Wallet by Tranoo.com. A simple non-custodial wallet: your keys, your money.`,
+    twitterUsername: `@HystricidaeTech`,
+    image: `images/icon.png`,
   },
   // More easily incorporate content into your pages through automatic TypeScript type generation and better GraphQL IntelliSense.
   // If you use VSCode you can also use the GraphQL plugin

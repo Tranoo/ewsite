@@ -1,4 +1,5 @@
 import * as React from "react"
+import {Helmet} from "react-helmet";
 import type { HeadFC, PageProps } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 
@@ -136,12 +137,18 @@ const badgeStyle = {
 const IndexPage: React.FC<PageProps> = () => {
   return (
     <main style={pageStyles}>
-      <h1 style={headingStyles}>
-        <StaticImage src="../images/icon.png" alt="Easy Wallet logo image" width="128" height="128" align="middle"/> Easy&nbsp;Wallet by&nbsp;Tranoo.com
-      </h1>
-      <p align="center" style={footerStyles}>
-      Powered by{' '} <a href="https://www.gatsbyjs.org/" target="_blank" rel="noreferrer noopener">Gatsby</a>.
-      </p>
+        <Helmet
+          htmlAttributes={{
+            lang: 'en',
+          }}
+        />
+
+        <h1 style={headingStyles}>
+            <StaticImage src="../images/icon.png" alt="Easy Wallet logo image" width="128" height="128" align="middle"/> Easy&nbsp;Wallet by&nbsp;Tranoo.com
+        </h1>
+        <p align="center" style={footerStyles}>
+            Powered by{' '} <a href="https://www.gatsbyjs.org/" target="_blank" rel="noreferrer noopener">Gatsby</a>.
+        </p>
     </main>
   )
 }
@@ -149,3 +156,4 @@ const IndexPage: React.FC<PageProps> = () => {
 export default IndexPage
 
 export const Head: HeadFC = () => <title>Easy Wallet by Tranoo.com</title>
+
