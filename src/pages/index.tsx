@@ -13,11 +13,14 @@ const headingStyles = {
   marginBottom: 64,
   maxWidth: 800,
 }
+const leftContentStyles = {
+  height: "100%",
+  marginRight: 32,
+}
 const footerStyles = {
   maxWidth: 800,
   position: "absolute",
   top: "90%",
-  /* height: "100%", */
 }
 const headingAccentStyles = {
   color: "#663399",
@@ -69,9 +72,6 @@ const descriptionStyle = {
   lineHeight: 1.25,
 }
 
-const docLinks = [
-]
-
 const badgeStyle = {
   color: "#fff",
   backgroundColor: "#088413",
@@ -88,52 +88,14 @@ const badgeStyle = {
   lineHeight: 1,
 }
 
-/*const links = [
-  {
-    text: "Tutorial",
-    url: "https://www.gatsbyjs.com/docs/tutorial/getting-started/",
-    description:
-      "A great place to get started if you're new to web development. Designed to guide you through setting up your first Gatsby site.",
-    color: "#E95800",
-  },
-  {
-    text: "How to Guides",
-    url: "https://www.gatsbyjs.com/docs/how-to/",
-    description:
-      "Practical step-by-step guides to help you achieve a specific goal. Most useful when you're trying to get something done.",
-    color: "#1099A8",
-  },
-  {
-    text: "Reference Guides",
-    url: "https://www.gatsbyjs.com/docs/reference/",
-    description:
-      "Nitty-gritty technical descriptions of how Gatsby works. Most useful when you need detailed information about Gatsby's APIs.",
-    color: "#BC027F",
-  },
-  {
-    text: "Conceptual Guides",
-    url: "https://www.gatsbyjs.com/docs/conceptual/",
-    description:
-      "Big-picture explanations of higher-level Gatsby concepts. Most useful for building understanding of a particular topic.",
-    color: "#0D96F2",
-  },
-  {
-    text: "Plugin Library",
-    url: "https://www.gatsbyjs.com/plugins",
-    description:
-      "Add functionality and customize your Gatsby site or app with thousands of plugins built by our amazing developer community.",
-    color: "#8EB814",
-  },
-  {
-    text: "Build and Host",
-    url: "https://www.gatsbyjs.com/cloud",
-    badge: true,
-    description:
-      "Now you’re ready to show the world! Give your Gatsby site superpowers: Build and host on Gatsby Cloud. Get started for free!",
-    color: "#663399",
-  },
-]
-*/
+const containerStyle = {
+  width: "100%",
+  display: "flex",
+}
+
+const logoStyles = {
+}
+
 const IndexPage: React.FC<PageProps> = () => {
   return (
     <main style={pageStyles}>
@@ -142,13 +104,22 @@ const IndexPage: React.FC<PageProps> = () => {
             lang: 'en',
           }}
         />
-
-        <h1 style={headingStyles}>
-            <StaticImage src="../images/icon.png" alt="Easy Wallet logo image" width="128" height="128" align="middle"/> Easy&nbsp;Wallet by&nbsp;Tranoo.com
-        </h1>
-        <p align="center" style={footerStyles}>
-            Powered by{' '} <a href="https://www.gatsbyjs.org/" target="_blank" rel="noreferrer noopener">Gatsby</a>.
-        </p>
+        <div style={containerStyle}>
+            <div style={leftContentStyles}>
+                <StaticImage src="../images/icon.png" alt="Easy Wallet logo image" width={128} height={128} style={logoStyles}/>
+            </div>
+            <div>
+                <h1 style={headingStyles}>
+                    Easy&nbsp;Wallet by&nbsp;Tranoo.com
+                </h1>
+                <ul>
+                    <li>Non-custodial simple secure wallet: your keys &mdash; your money!</li>
+                </ul>
+                <p style={footerStyles}>
+                    Powered by{' '} <a href="https://www.gatsbyjs.org/" target="_blank" rel="noreferrer noopener">Gatsby</a>.
+                </p>
+            </div>
+        </div>
     </main>
   )
 }
